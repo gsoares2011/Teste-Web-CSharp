@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
     <PackageReference Include="X.PagedList" Version="8.0.7" />
     <PackageReference Include="X.PagedList.Mvc" Version="8.0.7" />
     <PackageReference Include="X.PagedList.Mvc.Core" Version="8.0.7" />

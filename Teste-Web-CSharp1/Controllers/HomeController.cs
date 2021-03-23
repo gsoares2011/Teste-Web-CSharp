@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Teste_Web_CSharp1.Models;
+using Teste_Web_CSharp1.Facade;
 
 namespace Teste_Web_CSharp1.Controllers
 {
@@ -23,15 +23,21 @@ namespace Teste_Web_CSharp1.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Cadastro()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult CadastrarPontoTuristico()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            //Lista dos campos do formulário
+            string nome = Request.Form["txtNome"];
+            string descricao = Request.Form["txtDescricao"];
+            string localizacao = Request.Form["txtEnderdeco"];
+            string cidade = Request.Form["cbCidade"];          
+            string estado = Request.Form["cbEstado"];
+
+            return Json(new PontoTuristicoFacade().CadastrarPontoTuristico(nome, descricao, localizacao, cidade, estado));
         }
     }
 }
