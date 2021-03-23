@@ -51,6 +51,26 @@ button.accept-policy {
   line-height: inherit;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+td, th {
+    text-align: left;
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    border-bottom: 1px solid #ddd;
+}
+
+tr.header, tr:hover {
+    background-color: #f1f1f1;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {

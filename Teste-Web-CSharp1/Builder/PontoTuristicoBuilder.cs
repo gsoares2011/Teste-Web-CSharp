@@ -11,7 +11,7 @@ namespace Teste_Web_CSharp1.Builder
     {
         private readonly Endereco endereco = new Endereco();
         private readonly PontoTuristico pontoTuristico = new PontoTuristico();
-        private readonly PontoTuristicoDAO pontoTuristicoDAO = new PontoTuristicoDAO();
+        private readonly IPontoTuristicoDAO pontoTuristicoDAO = new PontoTuristicoDAO();
 
         //Nova instância do builder
         public static PontoTuristicoBuilder NovoPontoTuristico()
@@ -43,6 +43,11 @@ namespace Teste_Web_CSharp1.Builder
         public PontoTuristicoBuilder comEstado(string estado)
         {
             endereco.Estado = estado;
+            return this;
+        }
+        public PontoTuristicoBuilder comData()
+        {
+            pontoTuristico.Data_Inclusao = DateTime.Now;
             return this;
         }
         public PontoTuristicoBuilder Construir()

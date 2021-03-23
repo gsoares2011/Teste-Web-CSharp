@@ -39,5 +39,10 @@ namespace Teste_Web_CSharp1.Controllers
 
             return Json(new PontoTuristicoFacade().CadastrarPontoTuristico(nome, descricao, localizacao, cidade, estado));
         }
+
+        public IActionResult ListarPontosTuristicos()
+        {
+            return Json(new PontoTuristicoFacade().Listar());
+        }
     }
 }

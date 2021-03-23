@@ -5,5 +5,6 @@ create table PontosTuristicos
 	descricao varchar(100) not null,
 	localizacao varchar(60) not null,
 	cidade varchar(50) not null,
-	estado varchar(50) not null
+	estado varchar(50) not null,
+	data_inclusao date not null
 );
