@@ -86,7 +86,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 $ git clone <https://github.com/gsoares2011/Teste-Web-CSharp.git>
 
 # Acesse a pasta do projeto no Explorer/Finder do seu computador
-Opção pelo Git ou indo até o local onde foi feita a clonagem do repositório.
+Utilize a opção do GitApp ou indo até o local onde foi feita a clonagem do repositório.
 
 # Execute o arquivo de solução do Visual Studio
 Execute o arquivo com o nome "Teste-Web-CSharp1.sln".
