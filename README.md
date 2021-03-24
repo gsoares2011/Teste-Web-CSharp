@@ -97,7 +97,9 @@ Dentro da solução de Visual Studio seguir o seguinte caminho:
 
 "Teste-Web-CSharp1/Util/ConnectSQLServer.cs"
 
-Uma vez dentro da classe, atualizar a string de conexão para a correspondente a sua instalação do SQL Server, salvar as alterações.
+Uma vez dentro da classe, atualizar a string de conexão para a correspondente de acordo com a sua instalação do SQL Server.
+
+Salvar as alterações.
 
 # Execute o programa com o ISS Express dentro do Visual Studio
 Execute o programa dentro do Visual Studio, selecione a opção do ISS Express
