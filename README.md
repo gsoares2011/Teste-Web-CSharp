@@ -8,7 +8,7 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/gsoares2011/Teste-Web-CSharp"><strong>Explore os arquivos »</strong></a>
+    <a href="https://github.com/gsoares2011/Teste-Web-CSharp/Teste-Web-CSharp1"><strong>Explore os arquivos »</strong></a>
   </p>
 </p>
 
