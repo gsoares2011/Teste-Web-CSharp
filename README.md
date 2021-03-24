@@ -32,10 +32,8 @@
         <li><a href="#instalacao">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#como-usar">Como Usar</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#contato">Contato</a></li>
   </ol>
 </details>
 
@@ -115,7 +113,7 @@ Este projeto esta sobe a licença MIT.
 
 
 <!-- CONTACT -->
-## Contact
+## Contato
 
 Gustavo Soares - gsoares2011@live.com
 
