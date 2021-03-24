@@ -1,87 +1,84 @@
 ﻿$(document).ready(function () {
-    
+
 });
 
-function ListPontosTurísticos()
-{
+function montaTabela(data, columns) {
+    console.log(data);
+    console.log(columns);
+
+    var table = $('#root').tableSortable({
+        data: data,
+        columns: columns,
+        searchField: '#searchField',
+        responsive: {
+            1100: {
+                columns: {
+                    nome: 'Nome',
+                    cidade: 'Cidade',
+                    estado: 'Estado',
+                    data_Inclusao: 'Data de Inclusao',
+                    id: 'Mais Informações',
+                },
+            },
+        },
+        rowsPerPage: 5,
+        pagination: true,
+        tableWillMount: () => {
+            console.log('table will mount')
+        },
+        tableDidMount: () => {
+            console.log('table did mount')
+        },
+        tableWillUpdate: () => console.log('table will update'),
+        tableDidUpdate: () => console.log('table did update'),
+        tableWillUnmount: () => console.log('table will unmount'),
+        tableDidUnmount: () => console.log('table did unmount'),
+        onPaginationChange: function (nextPage, setPage) {
+            setPage(nextPage);
+        },
+        formatCell: function (row, key) {
+            if (key === 'id') {
+                return $('<button data-toggle="modal" data-target="#modal' + row[key] + '" href="#"></button>').addClass('btn btn-info').text("+ Detalhes");
+            }
+            return row[key];
+        }
+    });
+
+    $('#changeRows').on('change', function () {
+        table.updateRowsPerPage(parseInt($(this).val(), 10));
+    })
+
+    $('#rerender').click(function () {
+        table.refresh(true);
+    })
+
+    $('#distory').click(function () {
+        table.distroy();
+    })
+
+    $('#refresh').click(function () {
+        table.refresh();
+    })
+
+    $('#setPage2').click(function () {
+        table.setPage(1);
+    })
+}
+
+function ListPontosTuristicos() {
     var div = document.getElementById("Load");
     var div1 = document.getElementById("Pontos");
 
     div.style.display = "none";
     div1.style.display = "inline";
 
-    $.post("Home/ListarPontosTuristicos ", function (objPontos) {
-        console.log(objPontos);
-
-        var div = $('#Pages'); //Recupera a Div de paginação
-        var div1 = $('#PagesContent');
-
-        let paginas = Math.round((objPontos.length / 2));
-
-        for (let i = 0; i < paginas; i++) {
-
-            if (i == 0) {
-                div.append('<li class="nav-item">' +
-                    '<a class= "nav-link active" href = "#' + 'p' + (i + 1) + '" data-toggle="tab">' +
-                    '<i class="material-icons">' + (i + 1) + '</i>' +
-                    '</a>' +
-                    '</li>');
-                div1.append('<div class="tab-pane active" id="' + 'p' + (i + 1) + '">' +
-                                    '<table id="tbPontos' + (i + 1) + '">' +
-                                    '<tr>' +
-                                        '<th>Nome</th>' +
-                                        '<th>Cidade</th>' +
-                                        '<th>Estado</th>' +
-                                        '<th>Data de Inclusão</th>' +
-                                        '<th>Mais Informações</th>' +
-                                    '</tr>' +
-                                '</table>' +
-                            '</div>');
-            } else {
-                div.append('<li class="nav-item">' +
-                    '<a class= "nav-link" href = "#' + 'p' + (i + 1) + '" data-toggle="tab">' +
-                    '<i class="material-icons">' + (i + 1) + '</i>' +
-                    '</a>' +
-                    '</li>');
-                div1.append('<div class="tab-pane" id="' + 'p' + (i + 1) + '">' +
-                                    '<table id="tbPontos' + (i + 1) + '">' +
-                                    '<tr>' +
-                                        '<th>Nome</th>' +
-                                        '<th>Cidade</th>' +
-                                        '<th>Estado</th>' +
-                                        '<th>Data de Inclusão</th>' +
-                                        '<th>Mais Informações</th>' +
-                                    '</tr>' +
-                                '</table>' +
-                            '</div>');
-            }
-
-            $("#txtFiltroPonto").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $("#tbPontos" + (i + 1) + " tr").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        }
+    $.post("Home/ListarPontosTuristicos", function (objPontos) {
 
         let i = 1;
-        let j = 1;
         while ((i - 1) < objPontos.length) {
 
-            var div2 = $('#tbPontos' + j); //Recupera a table para exibir os dados
             var div3 = $('#modalPontos'); //Recupera o modal para detalhar os Pontos Turísticos
 
-            let data = new Date(Date.parse(objPontos[i - 1].data_Inclusao));
-            let formatData = ((data.getDate())) + "/" + ((data.getMonth() + 1)) + "/" + data.getFullYear();
-
-            div2.append(
-                '<tr>' +
-                    '<td>' + objPontos[i - 1].nome + '</td>' +
-                    '<td>' + objPontos[i - 1].cidade + '</td>' +
-                    '<td>' + objPontos[i - 1].estado + '</td>' +
-                    '<td>' + formatData + '</td>' +
-                '<td><button class="btn btn-info" type="button" id="btnDetalhes" data-toggle="modal" data-target="#modal' + objPontos[i - 1].id + '" href="#">+ Detalhes</button></td>' +
-                '</tr>');
 
             div3.append(
                 '<div class="modal fade" id="modal' + objPontos[i - 1].id + '" tabindex="-1" role="dialog" aria-labelledby="DetalhesPontosTuristicos" aria-hidden="true">' +
@@ -120,10 +117,22 @@ function ListPontosTurísticos()
                 '</div>' +
                 '</div>');
 
-            if (i % 2 == 0) {
-                j++;
-            }
             i++;
         }
+
+        var data = objPontos;
+
+        var columns = {
+            nome: 'Nome',
+            cidade: 'Cidade',
+            estado: 'Estado',
+            data_Inclusao: 'Data de Inclusão',
+            id: 'Mais Informações',
+        }
+
+        montaTabela(data, columns);
+
     });
-};
+}
+
+
