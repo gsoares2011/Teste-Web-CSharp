@@ -3,8 +3,6 @@
 });
 
 function montaTabela(data, columns) {
-    console.log(data);
-    console.log(columns);
 
     var table = $('#root').tableSortable({
         data: data,
