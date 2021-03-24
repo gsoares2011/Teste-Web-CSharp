@@ -47,12 +47,12 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre
 
-Uma aplicação capaz de cadastrar pontos turísticos localização no Brasil e listá-los de forma paginada para melhor vizualização.
+Uma aplicação capaz de cadastrar pontos turísticos, por localização, no Brasil e listá-los de forma paginada. Também conta com um filtro para que fique mais fácil a caça de informações nos registros de dados.
 
-O projeto conta com os seguintes recursos:
+O projeto contém os seguintes recursos:
 * Cadastro simples e rápido, contado com API do IBGE para preencher os selects.
 * Listagem paginada responsiva e adaptável, desenvolvida com o auxílio do plugin jQuery Table-Sortable.
-* Busca completa por qualquer dado na tabela de registros. Também desenvolvida usando o plugin jQuery Table-Sortable.
+* Busca completa por qualquer dado na tabela de registros. Também desenvolvida utulizando o plugin jQuery Table-Sortable.
 * Opção de detalhar melhor o registro escolhido, montrando Nome, Descrição, Endereço ou Referência, Cidade e Estado.
 
 
@@ -61,8 +61,8 @@ O projeto conta com os seguintes recursos:
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 * [JQuery Table-Sortable](https://www.jqueryscript.net/table/Paginate-Sort-Filter-Table-Sortable.html)
-* [.NET Core](https://dotnet.microsoft.com/download/dotnet/3.1)
-* [SQL Server](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
+* [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1)
+* [SQL Server 2019](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
 
 
 
@@ -84,12 +84,12 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 $ git clone <https://github.com/gsoares2011/Teste-Web-CSharp.git>
 
 # Acesse a pasta do projeto no Explorer/Finder do seu computador
-Utilize a opção do GitApp ou indo até o local onde foi feita a clonagem do repositório.
+Utilize a opção do GitApp ou vá até o local onde foi feita a clonagem do repositório.
 
 # Execute o arquivo de solução do Visual Studio
 Execute o arquivo com o nome "Teste-Web-CSharp1.sln".
 
-# Criar as tabelas no banco de dados
+# Crie as tabelas no banco de dados
 Criar as tabelas no SQL Server de acordo com os comandos dentro do diretório "Teste-Web-CSharp1/Database".
 
 # Confirgurar a string de conexão com o banco de dados
@@ -104,7 +104,7 @@ Salvar as alterações.
 # Execute o programa com o ISS Express dentro do Visual Studio
 Execute o programa dentro do Visual Studio, selecione a opção do ISS Express
 
-# O servidor inciará na porta:44336 - acesse <http://localhost:44336/>
+# O servidor inciará na porta:44336
 ````
 
 <!-- LICENSE -->
