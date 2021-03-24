@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Teste_Web_CSharp1.Models;
 using Teste_Web_CSharp1.DTO;
 using Teste_Web_CSharp1.Util;
@@ -20,15 +18,13 @@ namespace Teste_Web_CSharp1.DAO.PontoTuristicoDAO
             try
             {
                 //Comando SQL
-                string sql = "INSERT INTO PontosTuristicos(nome, descricao, localizacao, cidade, estado, data_inclusao) VALUES (@nome, @descricao, @endereco, @cidade, @estado, @data_inclusao)";
+                string sql = "INSERT INTO PontosTuristicos(nome, descricao, id_enderecoFK, data_inclusao) VALUES (@nome, @descricao, @endereco, @data_inclusao)";
                 //Objeto do tipo comando
                 SqlCommand command = new SqlCommand(sql, conn);
                 //Adiciona so parâmetros ao comando SQL
                 command.Parameters.Add(new SqlParameter("@nome", pontoTuristico.Nome));
                 command.Parameters.Add(new SqlParameter("@descricao", pontoTuristico.Descricao));
-                command.Parameters.Add(new SqlParameter("@endereco", pontoTuristico.Endereco.Localizacao));
-                command.Parameters.Add(new SqlParameter("@cidade", pontoTuristico.Endereco.Cidade));
-                command.Parameters.Add(new SqlParameter("@estado", pontoTuristico.Endereco.Estado));
+                command.Parameters.Add(new SqlParameter("@endereco", pontoTuristico.Endereco.Id));
                 command.Parameters.Add(new SqlParameter("@data_inclusao", pontoTuristico.Data_Inclusao.ToString("yyyy/MM/dd")));
                 //Abre a conexão
                 conn.Open();
@@ -59,7 +55,7 @@ namespace Teste_Web_CSharp1.DAO.PontoTuristicoDAO
             try
             {
                 //Comando SQL
-                string sql = "SELECT id_pontoturistico, nome, descricao, localizacao, cidade, estado, data_inclusao FROM PontosTuristicos ORDER BY data_inclusao ASC";
+                string sql = "SELECT p.id_pontoturistico, p.nome, p.descricao, e.localizacao, e.cidade, e.estado, p.data_inclusao FROM PontosTuristicos p, Enderecos e WHERE p.id_enderecoFK = e.id_endereco  ORDER BY p.data_inclusao ASC";
                 //Abre a conexão
                 conn.Open();
                 //Objeto do tipo comando

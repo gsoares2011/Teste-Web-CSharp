@@ -10,7 +10,7 @@ namespace Teste_Web_CSharp1.Facade
     {
         public string CadastrarPontoTuristico(string nome, string descricao, string localizacao, string cidade, string estado)
         {
-            if (PontoTuristicoBuilder.NovoPontoTuristico().comNome(nome).comDescricao(descricao).comEndereco(localizacao).comCidade(cidade).comEstado(estado).comData().Construir().GravarPontoTuristico())
+            if (PontoTuristicoBuilder.NovoPontoTuristico().comNome(nome).comDescricao(descricao).comEndereco(localizacao).comCidade(cidade).comEstado(estado).comData().GravarEndereco().Construir().GravarPontoTuristico())
             {
                 return "Novo Ponto Turístico Cadastrado com Sucesso!";
             }

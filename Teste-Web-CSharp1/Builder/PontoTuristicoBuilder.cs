@@ -4,14 +4,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using Teste_Web_CSharp1.Models;
 using Teste_Web_CSharp1.DAO.PontoTuristicoDAO;
+using Teste_Web_CSharp1.DAO.EnderecoDAO;
 
 namespace Teste_Web_CSharp1.Builder
 {
     public class PontoTuristicoBuilder
     {
         private readonly Endereco endereco = new Endereco();
+        private readonly IEnderecoDAO enderecoDAO = new EnderecoDAO();
         private readonly PontoTuristico pontoTuristico = new PontoTuristico();
-        private readonly IPontoTuristicoDAO pontoTuristicoDAO = new PontoTuristicoDAO();
+        private readonly IPontoTuristicoDAO pontoTuristicoDAO = new PontoTuristicoDAO();     
 
         //Nova instância do builder
         public static PontoTuristicoBuilder NovoPontoTuristico()
@@ -50,11 +52,17 @@ namespace Teste_Web_CSharp1.Builder
             pontoTuristico.Data_Inclusao = DateTime.Now;
             return this;
         }
+        //Grava o endereço na base de dados
+        public PontoTuristicoBuilder GravarEndereco()
+        {
+            enderecoDAO.Cadastrar(endereco);
+            return this;
+        }
         public PontoTuristicoBuilder Construir()
         {
             pontoTuristico.Endereco = endereco;
             return this;
-        }
+        }       
         //Grava o ponto turístico na base de dados
         public bool GravarPontoTuristico()
         {
