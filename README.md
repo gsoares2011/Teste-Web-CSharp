@@ -49,8 +49,6 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre
 
-[![Product Name Screen Shot][product-screenshot]](gsoares2011/Teste-Web-CSharp/tree/main/Teste-Web-CSharp1/images/Index.png)
-
 Uma aplicação capaz de cadastrar pontos turísticos localização no Brasil e listá-los de forma paginada para melhor vizualização.
 
 O projeto conta com os seguintes recursos:
@@ -77,9 +75,9 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 ### Pré-requisitos
 
-*[Git](https://git-scm.com)
-*[Visual Studio](https://visualstudio.microsoft.com/pt-br/)
-*[SQL Server](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
+* [Git](https://git-scm.com)
+* [Visual Studio](https://visualstudio.microsoft.com/pt-br/)
+* [SQL Server](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
 
 ### Instalação
 
