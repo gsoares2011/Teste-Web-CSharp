@@ -12,5 +12,5 @@ create table PontosTuristicos
 	nome varchar(20) not null,
 	descricao varchar(100) not null,
 	id_enderecoFK int not null references Enderecos(id_endereco),
-	data_inclusao date not null
+	data_inclusao datetime not null
 );
