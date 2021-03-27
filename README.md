@@ -86,25 +86,27 @@ $ git clone <https://github.com/gsoares2011/Teste-Web-CSharp.git>
 # Acesse a pasta do projeto no Explorer/Finder do seu computador
 Utilize a opção do GitApp ou vá até o local onde foi feita a clonagem do repositório.
 
-# Execute o arquivo de solução do Visual Studio
-Execute o arquivo com o nome "Teste-Web-CSharp1.sln".
+# Execute oas soluções do Frontend e Backend
+Entre no diretório "Backend Teste-Web-CSharp" e execute a solução "Backend Teste-Web-CSharp.sln".
+Entre no diretório "Frontend Teste-Web-CSharp" e execute a solução "Frontend Teste-Web-CSharp.sln".
 
 # Crie as tabelas no banco de dados
-Criar as tabelas no SQL Server de acordo com os comandos dentro do arquivo "Teste-Web-CSharp1/Database/SQL Server - Tables.sql".
+Criar as tabelas no SQL Server de acordo com os comandos dentro do arquivo "Backend Teste-Web-CSharp/Server Teste-Web-CSharp/Data/SQL Server - Tables.sql".
 
 # Ajustar a string de conexão com o banco de dados
 Dentro da solução de Visual Studio seguir o seguinte caminho:
 
-"Teste-Web-CSharp1/Database/ConnectSQLServer.cs"
+"Backend Teste-Web-CSharp/Server Teste-Web-CSharp/Data/ConnectSQLServer.cs"
 
 Uma vez dentro da classe, atualizar a string de conexão para a correspondente de acordo com o seu banco de dados no SQL Server.
 
 Salvar as alterações.
 
-# Execute o programa com o ISS Express dentro do Visual Studio
-Rode o programa dentro do Visual Studio, selecione a opção do ISS Express
+# Execute os projetos com o ISS Express dentro do Visual Studio
+Rode os projetos dentro do Visual Studio, selecione a opção do ISS Express
 
-# O servidor inciará na porta:44336
+# O frontend inciará na porta:44336
+# O backend inciará na porta:44310
 ````
 
 <!-- LICENSE -->
