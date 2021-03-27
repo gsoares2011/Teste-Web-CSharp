@@ -5779,9 +5779,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gustavo Soares\\Documents\\GitHub\\Teste-Web-CSharp\\Backend Teste-Web-CSharp\\Server Teste-Web-CSharp\\Server Teste-Web-CSharp.csproj",
-      "projectName": "Server Teste-Web-CSharp",
-      "projectPath": "C:\\Users\\Gustavo Soares\\Documents\\GitHub\\Teste-Web-CSharp\\Backend Teste-Web-CSharp\\Server Teste-Web-CSharp\\Server Teste-Web-CSharp.csproj",
+      "projectUniqueName": "C:\\Users\\Gustavo Soares\\Documents\\GitHub\\Teste-Web-CSharp\\Backend Teste-Web-CSharp\\Server Teste-Web-CSharp\\Backend Teste-Web-CSharp.csproj",
+      "projectName": "Backend Teste-Web-CSharp",
+      "projectPath": "C:\\Users\\Gustavo Soares\\Documents\\GitHub\\Teste-Web-CSharp\\Backend Teste-Web-CSharp\\Server Teste-Web-CSharp\\Backend Teste-Web-CSharp.csproj",
       "packagesPath": "C:\\Users\\Gustavo Soares\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Gustavo Soares\\Documents\\GitHub\\Teste-Web-CSharp\\Backend Teste-Web-CSharp\\Server Teste-Web-CSharp\\obj\\",
       "projectStyle": "PackageReference",
