@@ -90,19 +90,19 @@ Utilize a opção do GitApp ou vá até o local onde foi feita a clonagem do rep
 Execute o arquivo com o nome "Teste-Web-CSharp1.sln".
 
 # Crie as tabelas no banco de dados
-Criar as tabelas no SQL Server de acordo com os comandos dentro do diretório "Teste-Web-CSharp1/Database".
+Criar as tabelas no SQL Server de acordo com os comandos dentro do arquivo "Teste-Web-CSharp1/Database/SQL Server - Tables.sql".
 
-# Confirgurar a string de conexão com o banco de dados
+# Ajustar a string de conexão com o banco de dados
 Dentro da solução de Visual Studio seguir o seguinte caminho:
 
-"Teste-Web-CSharp1/Util/ConnectSQLServer.cs"
+"Teste-Web-CSharp1/Database/ConnectSQLServer.cs"
 
-Uma vez dentro da classe, atualizar a string de conexão para a correspondente de acordo com a sua instalação do SQL Server.
+Uma vez dentro da classe, atualizar a string de conexão para a correspondente de acordo com o seu banco de dados no SQL Server.
 
 Salvar as alterações.
 
 # Execute o programa com o ISS Express dentro do Visual Studio
-Execute o programa dentro do Visual Studio, selecione a opção do ISS Express
+Rode o programa dentro do Visual Studio, selecione a opção do ISS Express
 
 # O servidor inciará na porta:44336
 ````

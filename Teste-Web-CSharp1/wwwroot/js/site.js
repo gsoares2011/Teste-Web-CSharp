@@ -12,9 +12,9 @@ function montaTabela(data, columns) {
             1100: {
                 columns: {
                     nome: 'Nome',
+                    localizacao: 'Localização ou Referência',
                     cidade: 'Cidade',
                     estado: 'Estado',
-                    data_Inclusao: 'Data de Inclusao',
                     id: 'Mais Informações',
                 },
             },
@@ -60,7 +60,7 @@ function ListPontosTuristicos() {
     div.style.display = "none";
     div1.style.display = "inline";
 
-    $.post("Home/ListarPontosTuristicos", function (objPontos) {
+    $.get("/pontosTuristicos", function (objPontos) {
 
         let i = 1;
         while ((i - 1) < objPontos.length) {
@@ -112,9 +112,9 @@ function ListPontosTuristicos() {
 
         var columns = {
             nome: 'Nome',
+            localizacao: 'Localização ou Referência',
             cidade: 'Cidade',
             estado: 'Estado',
-            data_Inclusao: 'Data de Inclusão',
             id: 'Mais Informações',
         }
 

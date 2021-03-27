@@ -1,6 +1,6 @@
 ﻿using System;
 using Teste_Web_CSharp1.Models;
-using Teste_Web_CSharp1.Util;
+using Teste_Web_CSharp1.Database;
 using System.Data.SqlClient;
 
 namespace Teste_Web_CSharp1.DAO.EnderecoDAO

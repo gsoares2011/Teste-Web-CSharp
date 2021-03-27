@@ -4,8 +4,6 @@
     //API do IBGE que retorna todos os Estados do Brasil.
     $.getJSON("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome", function (data) {
 
-        console.log(data);
-
         //Para cada estado retornado pela API, cria-se o elemento option com o valor = estado.id, com nome = estado.nome e com sigla = estado.sigla
         for (let i = 0; i < data.length; i++) {
             var option = document.createElement('option');
@@ -31,9 +29,7 @@ function PreencheCidades() {
     if (idEstado != 0) {
 
         //API do IBGE que retorna todos as Cidades com base no parâmetro do Estado.
-        $.getJSON("https://servicodados.ibge.gov.br/api/v1/localidades/estados/" + idEstado + "/distritos", function (result) {
-
-            console.log(result);
+        $.getJSON("https://servicodados.ibge.gov.br/api/v1/localidades/estados/" + idEstado + "/distritos?orderBy=nome", function (result) {
 
             var combo = document.getElementById('cbCadCidades'); //Recupera o elemento select da página 
 
@@ -53,8 +49,6 @@ function verificarNome() {
     //Busca o elemento da página
     var input = document.getElementById("txtPontoNome");
 
-    console.log(input.value.length)
-
     //Se não tiver o tamanho especificado, altera a cor do campo para vermelho, caso contrário, altera para a cor padrão
     input.value.length <= 2 || input.value.length >= 21 ? (input.style.borderColor = "red", $('#txtPontoNome').tooltip('enable'), document.getElementById('btnCadastrar').disabled = true) : (input.style.borderColor = "#e2e2e2", $('#txtPontoNome').tooltip('disable'), document.getElementById('btnCadastrar').disabled = false);
 
@@ -65,8 +59,6 @@ function verificarDescricao() {
     //Busca o elemento da página
     var input = document.getElementById("txtDescricaoPonto");
 
-    console.log(input.value.length)
-
     //Se não tiver o tamanho especificado, altera a cor do campo para vermelho, caso contrário, altera para a cor padrão
     input.value.length <= 4 || input.value.length >= 101 ? (input.style.borderColor = "red", $('#txtDescricaoPonto').tooltip('enable'), document.getElementById('btnCadastrar').disabled = true) : (input.style.borderColor = "#e2e2e2", $('#txtDescricaoPonto').tooltip('disable'), document.getElementById('btnCadastrar').disabled = false);
 
@@ -76,8 +68,6 @@ function verificarDescricao() {
 function verificarEndereco() {
     //Busca o elemento da página
     var input = document.getElementById("txtLocalizacaoPonto");
-
-    console.log(input.value.length)
 
     //Se não tiver o tamanho especificado, altera a cor do campo para vermelho, caso contrário, altera para a cor padrão
     input.value.length <= 4 || input.value.length >= 61 ? (input.style.borderColor = "red", $('#txtLocalizacaoPonto').tooltip('enable'), document.getElementById('btnCadastrar').disabled = true) : (input.style.borderColor = "#e2e2e2", $('#txtLocalizacaoPonto').tooltip('disable'), document.getElementById('btnCadastrar').disabled = false);
@@ -94,7 +84,7 @@ function verificarFormularioCadastro() {
         //Realiza a requisição na controle
         $.ajax({
             type: 'post', //Tipo de acesso
-            url: "CadastrarPontoTuristico", //Endereço da controle
+            url: "/pontosTuristicos", //Endereço da controle
             data: { //Dados a serem passados
                 txtNome: $('#txtPontoNome').val().trim(),
                 txtDescricao: $('#txtDescricaoPonto').val().trim(),
@@ -108,16 +98,19 @@ function verificarFormularioCadastro() {
                 $('#alertaSucesso').html(''); //Limpa o conteúdo do alerta
                 //Cria um alerta com a mensagem da controladora e apresenta-o
                 var alert = document.getElementById("alertaSucesso");
-                var content = document.createTextNode(resultData);
+                var content = document.createTextNode(JSON.parse(resultData));
                 alert.appendChild(content);
                 $('#alertaSucesso').show();
+                $('#alertaErro').hide();;
                 $('#frmCadastroPontosTuristicos')[0].reset();
                 PreencheCidades();
             }
         });
     }
     else {
+        $('#alertaErro').html(''); //Limpa o conteúdo do alerta
         //Apresenta um alerta de erro ao usuário
+        document.getElementById("alertaErro").appendChild(document.createTextNode("Há algo de errado com um ou mais campos do formulário!"));
         $('#alertaErro').show();
         $('#alertaSucesso').hide();
     }

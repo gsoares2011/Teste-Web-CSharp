@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Teste_Web_CSharp1.Models;
 using Teste_Web_CSharp1.DTO;
-using Teste_Web_CSharp1.Util;
+using Teste_Web_CSharp1.Database;
 using System.Data.SqlClient;
 
 namespace Teste_Web_CSharp1.DAO.PontoTuristicoDAO
@@ -55,7 +55,7 @@ namespace Teste_Web_CSharp1.DAO.PontoTuristicoDAO
             try
             {
                 //Comando SQL
-                string sql = "SELECT p.id_pontoturistico, p.nome, p.descricao, e.localizacao, e.cidade, e.estado, p.data_inclusao FROM PontosTuristicos p, Enderecos e WHERE p.id_enderecoFK = e.id_endereco  ORDER BY p.data_inclusao ASC";
+                string sql = "SELECT p.id_pontoturistico, p.nome, p.descricao, e.localizacao, e.cidade, e.estado, p.data_inclusao FROM PontosTuristicos p, Enderecos e WHERE p.id_enderecoFK = e.id_endereco  ORDER BY p.data_inclusao DESC";
                 //Abre a conexão
                 conn.Open();
                 //Objeto do tipo comando

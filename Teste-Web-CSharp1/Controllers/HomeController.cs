@@ -11,13 +11,6 @@ namespace Teste_Web_CSharp1.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
             return View();
@@ -28,8 +21,11 @@ namespace Teste_Web_CSharp1.Controllers
             return View();
         }
 
-        public IActionResult CadastrarPontoTuristico()
+        [HttpPost]
+        [Route("pontosTuristicos")]
+        public IActionResult Post()
         {
+           
             //Lista dos campos do formulário
             string nome = Request.Form["txtNome"];
             string descricao = Request.Form["txtDescricao"];
@@ -40,7 +36,9 @@ namespace Teste_Web_CSharp1.Controllers
             return Json(new PontoTuristicoFacade().CadastrarPontoTuristico(nome, descricao, localizacao, cidade, estado));
         }
 
-        public IActionResult ListarPontosTuristicos()
+        [HttpGet]
+        [Route("pontosTuristicos")]
+        public IActionResult Get()
         {
             return Json(new PontoTuristicoFacade().Listar());
         }
