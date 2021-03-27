@@ -1,0 +1,60 @@
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Server Teste-Web-CSharp.exe
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Server Teste-Web-CSharp.deps.json
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Server Teste-Web-CSharp.runtimeconfig.json
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Server Teste-Web-CSharp.runtimeconfig.dev.json
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Server Teste-Web-CSharp.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Server Teste-Web-CSharp.pdb
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.csprojAssemblyReference.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.AssemblyInfoInputs.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.AssemblyInfo.cs
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\staticwebassets\Server Teste-Web-CSharp.StaticWebAssets.Manifest.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\staticwebassets\Server Teste-Web-CSharp.StaticWebAssets.xml
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\scopedcss\bundle\Server Teste-Web-CSharp.styles.css
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.RazorTargetAssemblyInfo.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.csproj.CopyComplete
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.pdb
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.genruntimeconfig.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Server Teste-Web-CSharp.exe
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Server Teste-Web-CSharp.deps.json
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Server Teste-Web-CSharp.runtimeconfig.json
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Server Teste-Web-CSharp.runtimeconfig.dev.json
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Server Teste-Web-CSharp.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Server Teste-Web-CSharp.pdb
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.AssemblyInfoInputs.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.AssemblyInfo.cs
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\staticwebassets\Server Teste-Web-CSharp.StaticWebAssets.Manifest.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\staticwebassets\Server Teste-Web-CSharp.StaticWebAssets.xml
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\scopedcss\bundle\Server Teste-Web-CSharp.styles.css
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.RazorTargetAssemblyInfo.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.csproj.CopyComplete
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.pdb
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.genruntimeconfig.cache
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\System.Web.Cors.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\System.Web.Http.Cors.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Gustavo Soares\Documents\GitHub\Teste-Web-CSharp\Backend Teste-Web-CSharp\Server Teste-Web-CSharp\obj\Debug\netcoreapp3.1\Server Teste-Web-CSharp.csprojAssemblyReference.cache
